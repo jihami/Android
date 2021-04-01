@@ -7,4 +7,9 @@
     <string name="bnt5">버튼5</string>
     <string name="text1">이건 text view 입니다.</string>
     <string name="edit1">이건 edit text 입니다.</string>
+    <string name="t1">textSize 속성</string>
+    <string name="t2">textColor 속성</string>
+    <string name="t3">textStyle 속성</string>
+    <string name="t4">typeface 속성</string>
+    <string name="t5">singleLine 속성 singleLine 속성 singleLine 속성 singleLine 속성 singleLine 속성 singleLine 속성 singleLine 속성 singleLine 속성</string>
 </resources>
