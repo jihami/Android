@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">chap4_Ex3</string>
+    <string name="bnt1">버튼1</string>
+    <string name="bnt2">버튼2</string>
+    <string name="bnt3">버튼3</string>
+    <string name="bnt4">버튼4</string>
+    <string name="bnt5">버튼5</string>
+
+</resources>
