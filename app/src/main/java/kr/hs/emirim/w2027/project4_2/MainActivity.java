@@ -11,6 +11,8 @@ import android.widget.LinearLayout;
 import android.widget.RadioGroup;
 import android.widget.Switch;
 
+import com.google.android.material.chip.ChipGroup;
+
 public class MainActivity extends AppCompatActivity {
     Switch switchStart;
     RadioGroup rg;
@@ -25,11 +27,10 @@ public class MainActivity extends AppCompatActivity {
         linear = findViewById(R.id.linear);
         rg = findViewById(R.id.rg);
         imgv = findViewById(R.id.imgv);
-        Button btnDone = findViewById(R.id.btn_done);
         switchStart.setOnCheckedChangeListener(checkListener);
-        btnDone.setOnClickListener(btnListener);
-
+        rg.setOnCheckedChangeListener(rgListener);
     }
+
     CompoundButton.OnCheckedChangeListener checkListener = new CompoundButton.OnCheckedChangeListener() {
         @Override
         public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -40,10 +41,11 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     };
-    View.OnClickListener btnListener = new View.OnClickListener() {
+
+    RadioGroup.OnCheckedChangeListener rgListener = new RadioGroup.OnCheckedChangeListener(){
         @Override
-        public void onClick(View v) {
-            switch (rg.getCheckedRadioButtonId()){
+        public void onCheckedChanged(RadioGroup group, int checkedId) {
+            switch (checkedId){
                 case R.id.radio_dog:
                     imgv.setImageResource(R.drawable.dog);
                     break;
