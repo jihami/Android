@@ -13,4 +13,6 @@
     <string name="btn5">5번</string>
     <string name="btn6">6번</string>
     <string name="btn7">7번</string>
+    <string name="base_btn1">기준1</string>
+    <string name="base_btn2">기준2</string>
 </resources>
