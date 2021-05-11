@@ -15,4 +15,8 @@
     <string name="btn7">7번</string>
     <string name="base_btn1">기준1</string>
     <string name="base_btn2">기준2</string>
+    <string name="text_phone">전화번호</string>
+    <string name="edit_hint">000-0000-0000</string>
+    <string name="edit_input">입력</string>
+    <string name="edit_cancel">취소</string>
 </resources>
