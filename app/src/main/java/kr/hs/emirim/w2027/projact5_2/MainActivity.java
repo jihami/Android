@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         Button[] btnNums = new Button[btnIds.length];
         for(int i=0; i<btnNums.length; i++){
             btnNums[i] = findViewById(btnIds[i]);
+            btnNums[i].setOnClickListener(btnListener);
         }
         edit1=findViewById(R.id.edit1);
         edit2=findViewById(R.id.edit2);
@@ -37,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             int mun1 = Integer.parseInt(edit1.getText().toString());
-            int mun2 = Integer.parseInt(edit1.getText().toString());
+            int mun2 = Integer.parseInt(edit2.getText().toString());
             int result = 0;
             switch(v.getId()){
                 case  R.id.btn_pluse:
@@ -55,6 +56,17 @@ public class MainActivity extends AppCompatActivity {
             }
             textResult.setText(R.string.text_result);
             textResult.append(" "+result);
+        }
+    };
+    View.OnClickListener btnListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Button btn = (Button)v;
+            if (edit1.isFocused()){
+                edit1.setText(edit1.getText().toString()+btn.getText());
+            }else{
+                edit2.setText(edit2.getText().toString()+btn.getText());
+            }
         }
     };
 }
