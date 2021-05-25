@@ -10,16 +10,19 @@
         android:gravity="center"
         android:background="#A9D1E3">
         <Button
+            android:id="@+id/btn_dog"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/btn1"
             android:layout_marginRight="10dp"/>
         <Button
+            android:id="@+id/btn_cat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/btn2"
             android:layout_marginRight="10dp"/>
         <Button
+            android:id="@+id/btn_horse"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/btn3"
@@ -29,21 +32,29 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <LinearLayout
-
             android:id="@+id/linear_dog"
             android:orientation="horizontal"
-            android:background="#ff0000"
+            android:background="#FFCB8C"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-        </LinearLayout
->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/bam2"/>
+        </LinearLayout>
         <LinearLayout
             android:id="@+id/linear_cat"
             android:orientation="horizontal"
-            android:background="#ffff00"
+            android:background="#D5D5B0"
             android:visibility="invisible"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/cat"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/linear_horse"
@@ -52,6 +63,11 @@
             android:visibility="invisible"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/horse"/>
         </LinearLayout>
     </FrameLayout>
 </LinearLayout>

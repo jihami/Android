@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
-    LinearLayout linearDog, linearCat, linearhorse;
+    LinearLayout linearDog, linearCat, linearHorse;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,22 +17,22 @@ public class MainActivity extends AppCompatActivity {
 
         linearDog = findViewById(R.id.linear_dog);
         linearCat = findViewById(R.id.linear_cat);
-        linearhorse = findViewById(R.id.linear_horse);
+        linearHorse = findViewById(R.id.linear_horse);
 
         Button btnDog = findViewById(R.id.btn_dog);
         Button btnCat = findViewById(R.id.btn_cat);
         Button btnHorse = findViewById(R.id.btn_horse);
 
-        btnDog.setOnClickListener(btnLinear);
-        btnCat.setOnClickListener(btnLinear);
-        btnHorse.setOnClickListener(btnLinear);
+        btnDog.setOnClickListener(btnListnear);
+        btnCat.setOnClickListener(btnListnear);
+        btnHorse.setOnClickListener(btnListnear);
     }
-    View.OnClickListener btnLinear = new View.OnClickListener() {
+    View.OnClickListener btnListnear = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             linearDog.setVisibility(View.INVISIBLE);
             linearCat.setVisibility(View.INVISIBLE);
-            linearhorse.setVisibility(View.INVISIBLE);
+            linearHorse.setVisibility(View.INVISIBLE);
             switch (v.getId()){
                 case R.id.btn_dog:
                     linearDog.setVisibility(View.VISIBLE);
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                     linearCat.setVisibility(View.VISIBLE);
                     break;
                 case R.id.btn_horse:
-                    linearhorse.setVisibility(View.VISIBLE);
+                    linearHorse.setVisibility(View.VISIBLE);
                     break;
             }
         }
