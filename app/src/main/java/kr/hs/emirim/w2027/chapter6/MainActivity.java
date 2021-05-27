@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onSelectedDayChange(@NonNull CalendarView view, int year, int month, int dayOfMonth) {
             y = year;
-            m = month;
+            m = month+1;
             d = dayOfMonth;
         }
     };
