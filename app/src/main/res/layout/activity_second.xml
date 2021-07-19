@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00ff00"
+    android:background="#00ffff"
     android:orientation="vertical"
     tools:context=".SecondActivity">
     <Button
-        android:id="@+id/btn_close"
+        android:id="@+id/second_close"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Second Activity Close"/>
