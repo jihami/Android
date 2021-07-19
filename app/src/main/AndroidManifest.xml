@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Project_10_1">
-        <activity android:name=".SecondActivity"></activity>
-<!--        자동생성 기능 안쓰면 위에거 직접 입력해줘야함-->
+        <activity android:name=".ThirdActivity"></activity>
+        <activity android:name=".SecondActivity" /> <!-- 자동생성 기능 안쓰면 위에거 직접 입력해줘야함 -->
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
