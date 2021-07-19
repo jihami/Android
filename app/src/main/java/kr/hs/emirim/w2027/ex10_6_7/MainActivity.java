@@ -29,14 +29,14 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View v) {
             switch (v.getId()){
                 case R.id.btn_incr:
-                    rating1.setRating(rating1.getRight()+rating1.getStepSize());
-                    rating2.setRating(rating2.getRight()+rating2.getStepSize());
-                    rating3.setRating(rating3.getRight()+rating3.getStepSize());
+                    rating1.setRating(rating1.getRating()+rating1.getStepSize());
+                    rating2.setRating(rating2.getRating()+rating2.getStepSize());
+                    rating3.setRating(rating3.getRating()+rating3.getStepSize());
                     break;
                 case R.id.btn_decr:
-                    rating1.setRating(rating1.getRight()-rating1.getStepSize());
-                    rating2.setRating(rating2.getRight()-rating2.getStepSize());
-                    rating3.setRating(rating2.getRight()-rating3.getStepSize());
+                    rating1.setRating(rating1.getRating()-rating1.getStepSize());
+                    rating2.setRating(rating2.getRating()-rating2.getStepSize());
+                    rating3.setRating(rating2.getRating()-rating3.getStepSize());
                     break;
             }
         }
