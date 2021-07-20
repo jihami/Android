@@ -30,7 +30,7 @@ public class ResultActivity extends AppCompatActivity {
                 index = i;
             }
         }
-//        Toast.makeText(getApplicationContext(), "max : "+max+", index:"+index, Toast.LENGTH_SHORT).show();
+//        Toast.makeText(getApplicationContext(), "max : "+max + ", index:"+index, Toast.LENGTH_SHORT).show();
 
         TextView[] tv = new TextView[imgNames.length];
         RatingBar[] rb = new RatingBar[imgNames.length];
