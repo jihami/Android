@@ -37,7 +37,7 @@ public class ResultActivity extends AppCompatActivity {
 
         int[] tvIds = {R.id.text1, R.id.text2, R.id.text3, R.id.text4, R.id.text5, R.id.text6, R.id.text7, R.id.text8 , R.id.text9};
         int[] rbIds = {R.id.rating1, R.id.rating2, R.id.rating3, R.id.rating4, R.id.rating5, R.id.rating6, R.id.rating7, R.id.rating8, R.id.rating9};
-        int[] imgSrcIds= {R.drawable.img1, R.drawable.img2, R.drawable.img3, R.drawable.img4, R.drawable.img5, R.drawable.img6, R.drawable.img7, R.drawable.img8, R.drawable.img9};
+        int[] imgSrcIds= {R.drawable.img1, R.drawable.img2, R.drawable.img3, R.drawable.img9, R.drawable.img5, R.drawable.img6, R.drawable.img7, R.drawable.img8, R.drawable.img9};
 
         for(int i=0; i<tv.length; i++){
             tv[i] = findViewById(tvIds[i]);
