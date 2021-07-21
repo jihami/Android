@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.util.function.ToDoubleBiFunction;
+//Change ViewFlipper
 
 public class MainActivity extends AppCompatActivity {
     String[] imgNames = {"사진1", "사진2", "사진3", "사진4", "사진5", "사진6", "사진7", "사진8", "사진9"};
