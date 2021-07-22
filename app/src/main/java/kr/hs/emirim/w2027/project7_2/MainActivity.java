@@ -1,11 +1,14 @@
 package kr.hs.emirim.w2027.project7_2;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -39,4 +42,25 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    public boolean onContextItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.item_bg1:
+                linear1.setBackgroundColor(Color.RED);
+                return true;
+            case R.id.item_bg2:
+                linear1.setBackgroundColor(Color.YELLOW);
+                return true;
+            case R.id.item_bg3:
+                linear1.setBackgroundColor(Color.BLUE);
+                return true;
+            case R.id.item_rotate:
+                btnChange.setRotation(90);
+                return true;
+            case R.id.item_zoom:
+                btnChange.setScaleX(2);
+                return true;
+        }
+        return false;
+    }
 }
