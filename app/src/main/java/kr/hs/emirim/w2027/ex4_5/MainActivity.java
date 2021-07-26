@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 arrList.add(editItem.getText().toString());
                 adapter.notifyDataSetChanged();
+                editItem.setText("");
             }
         });
 
