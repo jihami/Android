@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">StudyManager</string>
     <string name="text_title_calender">CALENDER</string>
-    <string name="text_title_studyList">STUDYLIST</string>
-    <string name="text_title_timerStopWatch">TIMER STOPWATCH</string>
+    <string name="text_title_studyList">STUDY LIST</string>
+    <string name="text_title_timerStopWatch">TIMER&#38;STOPWATCH</string>
     <string name="text_title_challenge">CHALLENGE</string>
+    <string name="left">&#60;</string>
+    <string name="right">&#62;</string>
 </resources>
