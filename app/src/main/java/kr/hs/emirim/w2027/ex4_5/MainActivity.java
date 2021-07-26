@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -34,6 +35,13 @@ public class MainActivity extends AppCompatActivity {
                 editItem.setText("");
             }
         });
-
+        list1.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int position, long id) {
+                arrList.remove(position);
+                adapter.notifyDataSetChanged();
+                return false;
+            }
+        });
     }
 }
