@@ -1,5 +1,6 @@
 package kr.hs.emirim.w2027.project11_1;
 
+import android.app.AlertDialog;
 import android.content.Context;
 import android.text.Html;
 import android.view.View;
@@ -40,6 +41,22 @@ public class GridAdapter extends BaseAdapter {
         imgV.setScaleType(ImageView.ScaleType.FIT_CENTER);
         imgV.setPadding(5,5,5,5);
         imgV.setImageResource(posterIds[i]);
+
+        final int pos = i;
+        imgV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder dialog = new AlertDialog.Builder(context);
+                View dialogView = View.inflate(context, R.layout.dialog1, null);
+                ImageView imgLarge = dialogView.findViewById(R.id.imgv_large);
+                imgLarge.setImageResource(posterIds[pos]);
+                dialog.setTitle("Large Poster");
+                dialog.setIcon(R.drawable.mvicon);
+                dialog.setView(dialogView);
+                dialog.setNegativeButton("close",null);
+                dialog.show();
+            }
+        });
         return imgV;
     }
 }
