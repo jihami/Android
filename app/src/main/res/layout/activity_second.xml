@@ -1,9 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Second">
+    android:background="#F1D7D7"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/text_title_calender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ED8686"
+        android:layout_gravity="center_horizontal"
+        android:textSize="70sp"
+        android:text="@string/text_title_studyList"/>
+    <LinearLayout
+        android:layout_width="1000px"
+        android:layout_height="1800px"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:background="#FFFFFF">
+        <EditText
+            android:id="@+id/edit_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="추가할 항목을 입력하시오."/>
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_gravity="right"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:textSize="15dp"
+            android:textColor="#ED8686"
+            android:backgroundTint="#F1D7D7"
+            android:text="@string/btn_add"/>
+        <Button
+            android:id="@+id/btn_del"
+            android:layout_gravity="right"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:textSize="15dp"
+            android:textColor="#ED8686"
+            android:backgroundTint="#F1D7D7"
+            android:text="@string/btn_del"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#7fED8686"
+        android:text="@string/app_name"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

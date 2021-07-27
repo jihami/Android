@@ -6,4 +6,6 @@
     <string name="text_title_challenge">CHALLENGE</string>
     <string name="left">&#60;</string>
     <string name="right">&#62;</string>
+    <string name="btn_add">추가</string>
+    <string name="btn_del">삭제</string>
 </resources>
