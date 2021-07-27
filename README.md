@@ -1,2 +1,4 @@
 # Spinner
-![image](https://user-images.githubusercontent.com/74415859/127096239-90c4c957-8399-471b-b82c-643ab48450f7.png)
+
+![image](https://user-images.githubusercontent.com/74415859/127096305-09bf8dc7-35b9-40ab-b5f4-ea0abd3ac2b5.png)
+
