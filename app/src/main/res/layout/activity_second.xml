@@ -17,33 +17,44 @@
         android:text="@string/text_title_studyList"/>
     <LinearLayout
         android:layout_width="1000px"
-        android:layout_height="1800px"
-        android:orientation="horizontal"
+        android:layout_height="1500px"
+        android:orientation="vertical"
         android:layout_gravity="center"
-        android:background="#FFFFFF">
+        android:background="#FFFFFF"
+        >
         <EditText
             android:id="@+id/edit_item"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="추가할 항목을 입력하시오."/>
-        <Button
-            android:id="@+id/btn_add"
-            android:layout_gravity="right"
-            android:layout_width="70dp"
-            android:layout_height="40dp"
-            android:textSize="15dp"
-            android:textColor="#ED8686"
-            android:backgroundTint="#F1D7D7"
-            android:text="@string/btn_add"/>
-        <Button
-            android:id="@+id/btn_del"
-            android:layout_gravity="right"
-            android:layout_width="70dp"
-            android:layout_height="40dp"
-            android:textSize="15dp"
-            android:textColor="#ED8686"
-            android:backgroundTint="#F1D7D7"
-            android:text="@string/btn_del"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="280px"
+            android:layout_gravity="center">
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:textSize="15dp"
+                android:textColor="#ED8686"
+                android:backgroundTint="#F1D7D7"
+                android:text="@string/btn_add"/>
+            <Button
+                android:id="@+id/btn_del"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:textSize="15dp"
+                android:textColor="#ED8686"
+                android:backgroundTint="#F1D7D7"
+                android:text="@string/btn_del"/>
+        </LinearLayout>
+        <ListView
+            android:id="@+id/list1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
     </LinearLayout>
     <TextView
         android:id="@+id/app_name"
