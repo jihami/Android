@@ -42,7 +42,7 @@ public class Second extends AppCompatActivity {
         list1.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> adapterView, View view, int position, long id) {
-                AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
+                AlertDialog.Builder dialog = new AlertDialog.Builder(Second.this);
                 dialog.setTitle("삭제여부 확인");
                 dialog.setMessage("정말로 삭제하시겠습니까?");
                 dialog.setPositiveButton("삭제", new DialogInterface.OnClickListener() {
