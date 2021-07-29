@@ -24,39 +24,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_second);
-        editItem = findViewById(R.id.edit_item);
-        arrList = new ArrayList<String>();
-        ListView list1 = findViewById(R.id.list1);
-        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,arrList);
-        list1.setAdapter(adapter);
-        Button btnAdd = findViewById(R.id.btn_add);
-        Button btnDel = findViewById(R.id.btn_del);
-        btnAdd.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                arrList.add(editItem.getText().toString());
-                adapter.notifyDataSetChanged();
-                editItem.setText("");
-            }
-        });
-        list1.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-            @Override
-            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int position, long id) {
-                AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
-                dialog.setTitle("삭제여부 확인");
-                dialog.setMessage("정말로 삭제하시겠습니까?");
-                dialog.setPositiveButton("삭제", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        arrList.remove(position);
-                        adapter.notifyDataSetChanged();
-                    }
-                });
-                dialog.setNegativeButton("취소", null);
-                dialog.show();
-                return false;
-            }
-        });
+        setContentView(R.layout.activity_third);
+
     }
 }
