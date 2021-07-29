@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     String selectedMusic;
     String musicPatch = Environment.getExternalStorageDirectory().getPath() + "/";
     MediaPlayer media;
-    Button btnStart, btnStop;
+    Button btnStart, btnStop, btnPause;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
         btnStart = findViewById(R.id.btn_start);
         btnStop = findViewById(R.id.btn_stop);
+        btnPause = findViewById(R.id.btn_pause);
         texMusic = findViewById(R.id.text_music);
         proBar = findViewById(R.id.progress);
 
@@ -83,6 +84,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnPause.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(btnPause.getText().equals("일시정지")){
+                    media.pause();
+                    btnPause.setText("이어듣기");
+                    proBar.setVisibility(View.INVISIBLE);
+                }else if(btnPause.getText().equals("이어듣기")){
+                    media.start();
+                    btnPause.setText("일시정지");
+                    proBar.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+
         btnStop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -94,6 +110,7 @@ public class MainActivity extends AppCompatActivity {
                 proBar.setVisibility(View.INVISIBLE);
             }
         });
+
 
         btnStop.setClickable(false);
     }
