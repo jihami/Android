@@ -16,10 +16,6 @@ import java.util.ArrayList;
 
 
 public class MainActivity extends AppCompatActivity {
-    ArrayList<String> arrList;
-    ArrayAdapter<String> adapter;
-    EditText editItem;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
