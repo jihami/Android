@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.SeekBar;
+import android.widget.Switch;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         setTitle("ProgressBar & SeekBar");
 
         progress = findViewById(R.id.progress1);
@@ -31,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         seek.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean b) {
-                textSeek.setText("진행률 : " + progress +"%");
+                textSeek.setText("진행률:"+ progress +"%");
             }
 
             @Override
@@ -45,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
     View.OnClickListener btnListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
