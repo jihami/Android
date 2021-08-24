@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     Intent intent;
@@ -32,10 +33,13 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.btn_start:
                     startService(intent);
                     Log.i("서비스 테스트::", "startService() 호출");
+                    Toast.makeText(getApplicationContext(), "startService", Toast.LENGTH_LONG).show();
+                    finish();
                     break;
                 case R.id.btn_stop:
                     stopService(intent);
                     Log.i("서비스 테스트::", "stopService() 호출");
+                    Toast.makeText(getApplicationContext(), "stopService", Toast.LENGTH_LONG).show();
                     break;
             }
         }
