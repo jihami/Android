@@ -20,27 +20,24 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_gravity="center_horizontal">
-        <TextView
-            android:layout_width="wrap_content"
+        <Button
+            android:layout_width="40dp"
             android:layout_height="wrap_content"
-            android:textColor="#ED8686"
             android:gravity="center_vertical"
-            android:layout_marginTop="900px"
-            android:textSize="50dp"
+            android:layout_marginTop="800px"
+            android:textSize="35dp"
             android:text="@string/btn_L"/>
         <CalendarView
             android:id="@+id/calendarView_calender"
-            android:layout_width="wrap_content"
-            android:layout_height="2500px"
+            android:layout_width="900px"
+            android:layout_height="1900px"
             android:layout_gravity="center_horizontal"
             android:background="#ffffff"/>
-        <TextView
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#ED8686"
             android:gravity="center_vertical"
-            android:layout_marginTop="900px"
-            android:textSize="50dp"
+            android:layout_marginTop="800px"
             android:text="@string/btn_R"/>
     </LinearLayout>
     <TextView
