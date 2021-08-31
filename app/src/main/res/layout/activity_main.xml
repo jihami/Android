@@ -10,10 +10,12 @@
     tools:context=".MainActivity">
 
     <ImageView
+        android:id="@+id/imgv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:scaleType="fitXY"
-        android:src="@drawable/battery1"/>
+        android:src="@drawable/battery1"
+        android:layout_marginBottom="30dp"
+        android:scaleType="fitXY"/>
     <EditText
         android:id="@+id/edit1"
         android:layout_width="match_parent"
