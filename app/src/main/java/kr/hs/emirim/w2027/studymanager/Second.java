@@ -11,6 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -37,6 +38,7 @@ public class Second extends AppCompatActivity {
                 arrList.add(editItem.getText().toString());
                 adapter.notifyDataSetChanged();
                 editItem.setText("");
+                Toast.makeText(getApplicationContext(),"삭제시 항목을 길게 클릭해주세요",Toast.LENGTH_SHORT).show();
             }
         });
         list1.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
