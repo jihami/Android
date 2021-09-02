@@ -21,12 +21,11 @@
         android:orientation="horizontal"
         android:layout_gravity="center_horizontal">
         <Button
-            android:layout_width="40dp"
+            android:id="@+id/btn_left"
+            android:layout_width="20dp"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
-            android:layout_marginTop="800px"
-            android:textSize="35dp"
-            android:text="@string/btn_L"/>
+            android:layout_marginTop="800px"/>
         <CalendarView
             android:id="@+id/calendarView_calender"
             android:layout_width="900px"
@@ -34,11 +33,11 @@
             android:layout_gravity="center_horizontal"
             android:background="#ffffff"/>
         <Button
-            android:layout_width="wrap_content"
+            android:id="@+id/btn_right"
+            android:layout_width="20dp"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
-            android:layout_marginTop="800px"
-            android:text="@string/btn_R"/>
+            android:layout_marginTop="800px"/>
     </LinearLayout>
     <TextView
         android:id="@+id/app_name"
