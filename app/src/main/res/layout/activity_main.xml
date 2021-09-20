@@ -25,12 +25,13 @@
             android:layout_width="20dp"
             android:layout_height="50dp"
             android:background="#F1D7D7"
+            android:layout_gravity="center_vertical"
             android:src="@drawable/left"
             android:scaleType="fitXY"/>
         <CalendarView
             android:id="@+id/calendarView_calender"
             android:layout_width="match_parent"
-            android:layout_height="1800px"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:background="#ffffff"/>
         <ImageButton
@@ -38,6 +39,7 @@
             android:layout_width="20dp"
             android:layout_height="50dp"
             android:background="#F1D7D7"
+            android:layout_gravity="center_vertical"
             android:src="@drawable/right"
             android:scaleType="fitXY"/>
     </LinearLayout>
