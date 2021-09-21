@@ -1,10 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Second">
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".MainActivity" >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="@string/Todo"/>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+      <EditText
+          android:id="@+id/inputToDo"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:ems="10"
+          android:gravity="start|top"
+          android:hint="할 일을 입력하세요."
+          android:inputType="textMultiLine" />
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+      <Button
+          android:id="@+id/saveButton"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="5"
+          android:text="저장"
+          app:backgroundTint="@color/black" />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="685dp">
+    </FrameLayout>
+
+</LinearLayout>
