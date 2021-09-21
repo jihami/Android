@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string name="what">What</string>
+    <string name="doW">do you want?</string>
+    <string name="btn_todo">ToDo</string>
+    <string name="btn_timer">Timer</string>
+    <string name="btn_stopwatch">StopWatch</string>
+    <string name="btn_note">Note</string>
+</resources>
