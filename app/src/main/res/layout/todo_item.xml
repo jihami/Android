@@ -33,6 +33,6 @@
             android:layout_marginRight="10dp"
             android:layout_weight="7"
             android:text="X"
-            app:backgroundTint="@color/black" />
+            app:backgroundTint="@android:color/holo_orange_light" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>

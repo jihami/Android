@@ -13,7 +13,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class Second extends AppCompatActivity {
-    private static final String TAG = "MainActivity";
+    private static final String TAG = "Second";
 
     Fragment mainFragment;
     EditText inputToDo;
