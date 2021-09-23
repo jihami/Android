@@ -4,52 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F1D7D7"
     android:orientation="vertical"
     tools:context=".MainActivity">
-    <TextView
-        android:id="@+id/text_title_calender"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#ED8686"
-        android:layout_gravity="center_horizontal"
-        android:textSize="70sp"
-        android:text="@string/text_title_calender"/>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center_horizontal">
-        <ImageButton
-            android:id="@+id/btn_left"
-            android:layout_width="20dp"
-            android:layout_height="50dp"
-            android:background="#F1D7D7"
-            android:layout_gravity="center_vertical"
-            android:src="@drawable/left"
-            android:scaleType="fitXY"/>
-        <CalendarView
-            android:id="@+id/calendarView_calender"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:background="#ffffff"/>
-        <ImageButton
-            android:id="@+id/btn_right"
-            android:layout_width="20dp"
-            android:layout_height="50dp"
-            android:background="#F1D7D7"
-            android:layout_gravity="center_vertical"
-            android:src="@drawable/right"
-            android:scaleType="fitXY"/>
-    </LinearLayout>
-    <TextView
-        android:id="@+id/app_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:textColor="#7fED8686"
-        android:text="@string/app_name"/>
-
 
 </LinearLayout>
