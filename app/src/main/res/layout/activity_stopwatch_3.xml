@@ -12,28 +12,44 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:layout_gravity="center_horizontal"
-        android:textSize="30sp"/>
-    <Button
-        android:id="@+id/btn_start"
-        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="40sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center_horizontal"
-        android:text="시작"/>
-    <Button
-        android:id="@+id/btn_stop"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center_horizontal"
-        android:text="정지"/>
-    <Button
-        android:id="@+id/btn_reset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center_horizontal"
-        android:text="초기화"/>
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            android:text="시작"
+            android:textSize="18sp"/>
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            android:text="정지"
+            android:textSize="18sp"/>
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            android:text="초기화"
+            android:textSize="18sp"/>
+    </LinearLayout>
 
 </LinearLayout>

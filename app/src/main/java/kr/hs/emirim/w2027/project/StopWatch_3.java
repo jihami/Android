@@ -19,7 +19,7 @@ public class StopWatch_3 extends AppCompatActivity {
         setContentView(R.layout.activity_stopwatch_3);
 
         chronometer = findViewById(R.id.chronometer);
-        chronometer.setFormat("시간 : %s");
+//        chronometer.setFormat("시간 : %s");
 
         Button btnStart = findViewById(R.id.btn_start);
         Button btnStop = findViewById(R.id.btn_stop);
