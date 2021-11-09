@@ -1,7 +1,8 @@
 package kr.hs.emirim.w2027.project;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class ToDo_1 extends AppCompatActivity {
 
